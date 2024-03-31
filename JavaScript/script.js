@@ -31,7 +31,9 @@ async function checkWeather(city) {
         document.querySelector('.city').innerHTML = data.name; // Název města
         document.querySelector('.temperature').innerHTML = data.main.temp.toFixed(1) + "°C"; // Teplota
         document.querySelector('.humidity').innerHTML = data.main.humidity + "%"; // Vlhkost vzduchu
-        document.querySelector('.wind').innerHTML = data.wind.speed + "km/h"; // Rychlost větru
+        // Převod rychlosti větru z m/s na km/h
+        let windSpeed = Math.round(data.wind.speed * 3.6);
+        document.querySelector('.wind').innerHTML = windSpeed + "km/h"; // Rychlost větru
 
         // Nastavení weatherIcon podle počasí získané z dat z API
         const weatherIcons = {

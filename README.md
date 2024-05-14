@@ -14,4 +14,4 @@
 <a href="https://weather-app-dejvcodes.netlify.app/">Weather App</a>
 
 ## License🔐
-[MIT License](LICENSE) 
+[MIT License](LICENSE)

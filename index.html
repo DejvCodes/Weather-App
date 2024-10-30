@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------- Style CSS ---------->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!---------- Favicon ---------->
+    <link rel="shortcut icon" href="img/clouds.png" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div id="search-form">
+                <input type="text" id="search-box" placeholder="Enter city name ..." spellcheck="false">
+                <button id="search-btn"><img src="img/search.png"></button>
+            </div>
+
+            <div class="error" id="error">
+                <p>Please enter name of the city.</p>
+            </div>
+
+            <div class="weather" id="weather">
+                <img src="img/rain.png" id="weather-icon">
+                <h1 class="temperature" id="temperature">22°C</h1>
+                <h2 class="city" id="city">Prague</h2>
+                <div class="weather-details">
+                    <div class="column">
+                        <img src="img/humidity.png">
+                        <div>
+                            <p class="humidity" id="humidity">50%</p>
+                            <p class="h">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="img/wind.png">
+                        <div>
+                            <p class="wind" id="wind">5 km/h</p>
+                            <p class="w">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="JavaScript/script.js"></script>
+</body>
+</html>
